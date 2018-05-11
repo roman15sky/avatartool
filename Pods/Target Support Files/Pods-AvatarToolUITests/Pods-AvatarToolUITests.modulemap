@@ -1,0 +1,6 @@
+framework module Pods_AvatarToolUITests {
+  umbrella header "Pods-AvatarToolUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

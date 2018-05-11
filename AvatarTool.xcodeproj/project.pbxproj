@@ -1,0 +1,971 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E2514EB7A080743D8496B6E /* Pods_AvatarTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CEE3659598005A344ADCDC /* Pods_AvatarTool.framework */; };
+		842A5A0420411A2D004F4B96 /* CropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A5A0220411A2D004F4B96 /* CropViewController.swift */; };
+		842A5A0520411A2D004F4B96 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 842A5A0320411A2D004F4B96 /* Info.plist */; };
+		842A5A3220411BC0004F4B96 /* TOCropViewControllerLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 842A5A0720411BBF004F4B96 /* TOCropViewControllerLocalizable.strings */; };
+		842A5A3320411BC0004F4B96 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 842A5A1020411BBF004F4B96 /* Info.plist */; };
+		842A5A3420411BC0004F4B96 /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A5A1620411BBF004F4B96 /* TOActivityCroppedImageProvider.m */; };
+		842A5A3520411BC0004F4B96 /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A5A1820411BBF004F4B96 /* TOCroppedImageAttributes.m */; };
+		842A5A3620411BC0004F4B96 /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A5A1A20411BBF004F4B96 /* TOCropViewControllerTransitioning.m */; };
+		842A5A3720411BC0004F4B96 /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A5A1C20411BBF004F4B96 /* UIImage+CropRotate.m */; };
+		842A5A3820411BC0004F4B96 /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A5A2420411BBF004F4B96 /* TOCropViewController.m */; };
+		842A5A3920411BC0004F4B96 /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A5A2920411BBF004F4B96 /* TOCropOverlayView.m */; };
+		842A5A3A20411BC0004F4B96 /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A5A2B20411BBF004F4B96 /* TOCropScrollView.m */; };
+		842A5A3B20411BC0004F4B96 /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A5A2D20411BBF004F4B96 /* TOCropToolbar.m */; };
+		842A5A3C20411BC0004F4B96 /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A5A2F20411BBF004F4B96 /* TOCropView.m */; };
+		8442E975203B19A200E248F0 /* FAScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442E974203B19A100E248F0 /* FAScrollView.swift */; };
+		8442E977203B1C6000E248F0 /* FAGridView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8442E976203B1C5F00E248F0 /* FAGridView.xib */; };
+		8442E979203B55F100E248F0 /* UIImage+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442E978203B55EF00E248F0 /* UIImage+Additions.swift */; };
+		84DA55A5203AFAD200B0B59A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA55A4203AFAD200B0B59A /* AppDelegate.swift */; };
+		84DA55A7203AFAD200B0B59A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA55A6203AFAD200B0B59A /* ViewController.swift */; };
+		84DA55AA203AFAD200B0B59A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DA55A8203AFAD200B0B59A /* Main.storyboard */; };
+		84DA55AC203AFAD200B0B59A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DA55AB203AFAD200B0B59A /* Assets.xcassets */; };
+		84DA55AF203AFAD200B0B59A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DA55AD203AFAD200B0B59A /* LaunchScreen.storyboard */; };
+		84DA55BA203AFAD200B0B59A /* AvatarToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA55B9203AFAD200B0B59A /* AvatarToolTests.swift */; };
+		84DA55C5203AFAD200B0B59A /* AvatarToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA55C4203AFAD200B0B59A /* AvatarToolUITests.swift */; };
+		84DA55D3203AFE2C00B0B59A /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA55D2203AFE2C00B0B59A /* PhotosViewController.swift */; };
+		84DA55D9203B01B000B0B59A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA55D8203B01B000B0B59A /* Constants.swift */; };
+		8B0CF7B19FD0894AE8381B74 /* Pods_AvatarToolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C186F1C83BFE190760EB15A6 /* Pods_AvatarToolUITests.framework */; };
+		B9CE6B98B3201B662EDF81A4 /* Pods_AvatarToolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E41A1483BFE87F75862C81 /* Pods_AvatarToolTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84DA55B6203AFAD200B0B59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84DA5599203AFAD200B0B59A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84DA55A0203AFAD200B0B59A;
+			remoteInfo = AvatarTool;
+		};
+		84DA55C1203AFAD200B0B59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84DA5599203AFAD200B0B59A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84DA55A0203AFAD200B0B59A;
+			remoteInfo = AvatarTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		062595E6B32FF7AB17E0164B /* Pods-AvatarToolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvatarToolUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AvatarToolUITests/Pods-AvatarToolUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0DDAA2EA251C077EC4452469 /* Pods-AvatarTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvatarTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-AvatarTool/Pods-AvatarTool.release.xcconfig"; sourceTree = "<group>"; };
+		25CEE3659598005A344ADCDC /* Pods_AvatarTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvatarTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2841BB2263E43F0C9702A1F0 /* Pods-AvatarToolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvatarToolTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AvatarToolTests/Pods-AvatarToolTests.debug.xcconfig"; sourceTree = "<group>"; };
+		820622961267D4EC75A8F12A /* Pods-AvatarTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvatarTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AvatarTool/Pods-AvatarTool.debug.xcconfig"; sourceTree = "<group>"; };
+		842A5A0020411A2D004F4B96 /* CropViewController-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CropViewController-Bridging-Header.h"; sourceTree = "<group>"; };
+		842A5A0120411A2D004F4B96 /* CropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropViewController.h; sourceTree = "<group>"; };
+		842A5A0220411A2D004F4B96 /* CropViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropViewController.swift; sourceTree = "<group>"; };
+		842A5A0320411A2D004F4B96 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		842A5A0820411BBF004F4B96 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		842A5A0920411BBF004F4B96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		842A5A0A20411BBF004F4B96 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		842A5A0B20411BBF004F4B96 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		842A5A0C20411BBF004F4B96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		842A5A0D20411BBF004F4B96 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		842A5A0E20411BBF004F4B96 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		842A5A0F20411BBF004F4B96 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		842A5A1020411BBF004F4B96 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		842A5A1120411BBF004F4B96 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		842A5A1220411BBF004F4B96 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		842A5A1320411BBF004F4B96 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		842A5A1520411BBF004F4B96 /* TOActivityCroppedImageProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOActivityCroppedImageProvider.h; sourceTree = "<group>"; };
+		842A5A1620411BBF004F4B96 /* TOActivityCroppedImageProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOActivityCroppedImageProvider.m; sourceTree = "<group>"; };
+		842A5A1720411BBF004F4B96 /* TOCroppedImageAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCroppedImageAttributes.h; sourceTree = "<group>"; };
+		842A5A1820411BBF004F4B96 /* TOCroppedImageAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCroppedImageAttributes.m; sourceTree = "<group>"; };
+		842A5A1920411BBF004F4B96 /* TOCropViewControllerTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropViewControllerTransitioning.h; sourceTree = "<group>"; };
+		842A5A1A20411BBF004F4B96 /* TOCropViewControllerTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropViewControllerTransitioning.m; sourceTree = "<group>"; };
+		842A5A1B20411BBF004F4B96 /* UIImage+CropRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CropRotate.h"; sourceTree = "<group>"; };
+		842A5A1C20411BBF004F4B96 /* UIImage+CropRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CropRotate.m"; sourceTree = "<group>"; };
+		842A5A1D20411BBF004F4B96 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		842A5A1E20411BBF004F4B96 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		842A5A1F20411BBF004F4B96 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		842A5A2020411BBF004F4B96 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		842A5A2120411BBF004F4B96 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		842A5A2220411BBF004F4B96 /* TOCropViewController-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TOCropViewController-Bridging-Header.h"; sourceTree = "<group>"; };
+		842A5A2320411BBF004F4B96 /* TOCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropViewController.h; sourceTree = "<group>"; };
+		842A5A2420411BBF004F4B96 /* TOCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropViewController.m; sourceTree = "<group>"; };
+		842A5A2520411BBF004F4B96 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		842A5A2620411BBF004F4B96 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
+		842A5A2820411BBF004F4B96 /* TOCropOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropOverlayView.h; sourceTree = "<group>"; };
+		842A5A2920411BBF004F4B96 /* TOCropOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropOverlayView.m; sourceTree = "<group>"; };
+		842A5A2A20411BBF004F4B96 /* TOCropScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropScrollView.h; sourceTree = "<group>"; };
+		842A5A2B20411BBF004F4B96 /* TOCropScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropScrollView.m; sourceTree = "<group>"; };
+		842A5A2C20411BBF004F4B96 /* TOCropToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropToolbar.h; sourceTree = "<group>"; };
+		842A5A2D20411BBF004F4B96 /* TOCropToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropToolbar.m; sourceTree = "<group>"; };
+		842A5A2E20411BBF004F4B96 /* TOCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropView.h; sourceTree = "<group>"; };
+		842A5A2F20411BBF004F4B96 /* TOCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropView.m; sourceTree = "<group>"; };
+		842A5A3020411BBF004F4B96 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TOCropViewControllerLocalizable.strings"; sourceTree = "<group>"; };
+		842A5A3120411BBF004F4B96 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/TOCropViewControllerLocalizable.strings"; sourceTree = "<group>"; };
+		8442E974203B19A100E248F0 /* FAScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAScrollView.swift; sourceTree = "<group>"; };
+		8442E976203B1C5F00E248F0 /* FAGridView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FAGridView.xib; sourceTree = "<group>"; };
+		8442E978203B55EF00E248F0 /* UIImage+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Additions.swift"; sourceTree = "<group>"; };
+		84DA55A1203AFAD200B0B59A /* AvatarTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvatarTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DA55A4203AFAD200B0B59A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84DA55A6203AFAD200B0B59A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84DA55A9203AFAD200B0B59A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84DA55AB203AFAD200B0B59A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84DA55AE203AFAD200B0B59A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84DA55B0203AFAD200B0B59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DA55B5203AFAD200B0B59A /* AvatarToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvatarToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DA55B9203AFAD200B0B59A /* AvatarToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarToolTests.swift; sourceTree = "<group>"; };
+		84DA55BB203AFAD200B0B59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DA55C0203AFAD200B0B59A /* AvatarToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvatarToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DA55C4203AFAD200B0B59A /* AvatarToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarToolUITests.swift; sourceTree = "<group>"; };
+		84DA55C6203AFAD200B0B59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DA55D2203AFE2C00B0B59A /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		84DA55D8203B01B000B0B59A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		91D9809F33DBAAE78B79DF33 /* Pods-AvatarToolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvatarToolTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AvatarToolTests/Pods-AvatarToolTests.release.xcconfig"; sourceTree = "<group>"; };
+		B11C2C93E739FF7752F1D21B /* Pods-AvatarToolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvatarToolUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AvatarToolUITests/Pods-AvatarToolUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C186F1C83BFE190760EB15A6 /* Pods_AvatarToolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvatarToolUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1E41A1483BFE87F75862C81 /* Pods_AvatarToolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvatarToolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84DA559E203AFAD200B0B59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E2514EB7A080743D8496B6E /* Pods_AvatarTool.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DA55B2203AFAD200B0B59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9CE6B98B3201B662EDF81A4 /* Pods_AvatarToolTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DA55BD203AFAD200B0B59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0CF7B19FD0894AE8381B74 /* Pods_AvatarToolUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		135FB089FE1CE03F6DB33FB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				820622961267D4EC75A8F12A /* Pods-AvatarTool.debug.xcconfig */,
+				0DDAA2EA251C077EC4452469 /* Pods-AvatarTool.release.xcconfig */,
+				2841BB2263E43F0C9702A1F0 /* Pods-AvatarToolTests.debug.xcconfig */,
+				91D9809F33DBAAE78B79DF33 /* Pods-AvatarToolTests.release.xcconfig */,
+				B11C2C93E739FF7752F1D21B /* Pods-AvatarToolUITests.debug.xcconfig */,
+				062595E6B32FF7AB17E0164B /* Pods-AvatarToolUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		842A59FF20411A2D004F4B96 /* CropViewController */ = {
+			isa = PBXGroup;
+			children = (
+				842A5A0020411A2D004F4B96 /* CropViewController-Bridging-Header.h */,
+				842A5A0120411A2D004F4B96 /* CropViewController.h */,
+				842A5A0220411A2D004F4B96 /* CropViewController.swift */,
+				842A5A0320411A2D004F4B96 /* Info.plist */,
+			);
+			path = CropViewController;
+			sourceTree = "<group>";
+		};
+		842A5A0620411BBF004F4B96 /* TOCropViewController */ = {
+			isa = PBXGroup;
+			children = (
+				842A5A0720411BBF004F4B96 /* TOCropViewControllerLocalizable.strings */,
+				842A5A1020411BBF004F4B96 /* Info.plist */,
+				842A5A1420411BBF004F4B96 /* Models */,
+				842A5A2220411BBF004F4B96 /* TOCropViewController-Bridging-Header.h */,
+				842A5A2320411BBF004F4B96 /* TOCropViewController.h */,
+				842A5A2420411BBF004F4B96 /* TOCropViewController.m */,
+				842A5A2720411BBF004F4B96 /* Views */,
+			);
+			path = TOCropViewController;
+			sourceTree = "<group>";
+		};
+		842A5A1420411BBF004F4B96 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				842A5A1520411BBF004F4B96 /* TOActivityCroppedImageProvider.h */,
+				842A5A1620411BBF004F4B96 /* TOActivityCroppedImageProvider.m */,
+				842A5A1720411BBF004F4B96 /* TOCroppedImageAttributes.h */,
+				842A5A1820411BBF004F4B96 /* TOCroppedImageAttributes.m */,
+				842A5A1920411BBF004F4B96 /* TOCropViewControllerTransitioning.h */,
+				842A5A1A20411BBF004F4B96 /* TOCropViewControllerTransitioning.m */,
+				842A5A1B20411BBF004F4B96 /* UIImage+CropRotate.h */,
+				842A5A1C20411BBF004F4B96 /* UIImage+CropRotate.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		842A5A2720411BBF004F4B96 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				842A5A2820411BBF004F4B96 /* TOCropOverlayView.h */,
+				842A5A2920411BBF004F4B96 /* TOCropOverlayView.m */,
+				842A5A2A20411BBF004F4B96 /* TOCropScrollView.h */,
+				842A5A2B20411BBF004F4B96 /* TOCropScrollView.m */,
+				842A5A2C20411BBF004F4B96 /* TOCropToolbar.h */,
+				842A5A2D20411BBF004F4B96 /* TOCropToolbar.m */,
+				842A5A2E20411BBF004F4B96 /* TOCropView.h */,
+				842A5A2F20411BBF004F4B96 /* TOCropView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84DA5598203AFAD200B0B59A = {
+			isa = PBXGroup;
+			children = (
+				84DA55A3203AFAD200B0B59A /* AvatarTool */,
+				84DA55B8203AFAD200B0B59A /* AvatarToolTests */,
+				84DA55C3203AFAD200B0B59A /* AvatarToolUITests */,
+				84DA55A2203AFAD200B0B59A /* Products */,
+				135FB089FE1CE03F6DB33FB4 /* Pods */,
+				B052664C6294D6EA071E2AC5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+			wrapsLines = 0;
+		};
+		84DA55A2203AFAD200B0B59A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84DA55A1203AFAD200B0B59A /* AvatarTool.app */,
+				84DA55B5203AFAD200B0B59A /* AvatarToolTests.xctest */,
+				84DA55C0203AFAD200B0B59A /* AvatarToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84DA55A3203AFAD200B0B59A /* AvatarTool */ = {
+			isa = PBXGroup;
+			children = (
+				84DA55A4203AFAD200B0B59A /* AppDelegate.swift */,
+				84DA55A6203AFAD200B0B59A /* ViewController.swift */,
+				84DA55A8203AFAD200B0B59A /* Main.storyboard */,
+				84DA55AB203AFAD200B0B59A /* Assets.xcassets */,
+				84DA55AD203AFAD200B0B59A /* LaunchScreen.storyboard */,
+				84DA55B0203AFAD200B0B59A /* Info.plist */,
+				84DA55D2203AFE2C00B0B59A /* PhotosViewController.swift */,
+				8442E974203B19A100E248F0 /* FAScrollView.swift */,
+				8442E976203B1C5F00E248F0 /* FAGridView.xib */,
+				8442E978203B55EF00E248F0 /* UIImage+Additions.swift */,
+				84DA55D8203B01B000B0B59A /* Constants.swift */,
+				842A5A0620411BBF004F4B96 /* TOCropViewController */,
+				842A59FF20411A2D004F4B96 /* CropViewController */,
+			);
+			path = AvatarTool;
+			sourceTree = "<group>";
+		};
+		84DA55B8203AFAD200B0B59A /* AvatarToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				84DA55B9203AFAD200B0B59A /* AvatarToolTests.swift */,
+				84DA55BB203AFAD200B0B59A /* Info.plist */,
+			);
+			path = AvatarToolTests;
+			sourceTree = "<group>";
+		};
+		84DA55C3203AFAD200B0B59A /* AvatarToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84DA55C4203AFAD200B0B59A /* AvatarToolUITests.swift */,
+				84DA55C6203AFAD200B0B59A /* Info.plist */,
+			);
+			path = AvatarToolUITests;
+			sourceTree = "<group>";
+		};
+		B052664C6294D6EA071E2AC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25CEE3659598005A344ADCDC /* Pods_AvatarTool.framework */,
+				C1E41A1483BFE87F75862C81 /* Pods_AvatarToolTests.framework */,
+				C186F1C83BFE190760EB15A6 /* Pods_AvatarToolUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84DA55A0203AFAD200B0B59A /* AvatarTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DA55C9203AFAD200B0B59A /* Build configuration list for PBXNativeTarget "AvatarTool" */;
+			buildPhases = (
+				B022EA4DCE75F418054BF119 /* [CP] Check Pods Manifest.lock */,
+				84DA559D203AFAD200B0B59A /* Sources */,
+				84DA559E203AFAD200B0B59A /* Frameworks */,
+				84DA559F203AFAD200B0B59A /* Resources */,
+				48834B1AEDB0970EBE23D4E6 /* [CP] Embed Pods Frameworks */,
+				79FF364C7E09B3116D73DB96 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AvatarTool;
+			productName = AvatarTool;
+			productReference = 84DA55A1203AFAD200B0B59A /* AvatarTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84DA55B4203AFAD200B0B59A /* AvatarToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DA55CC203AFAD200B0B59A /* Build configuration list for PBXNativeTarget "AvatarToolTests" */;
+			buildPhases = (
+				C0423C11F87741AD8B78E9BA /* [CP] Check Pods Manifest.lock */,
+				84DA55B1203AFAD200B0B59A /* Sources */,
+				84DA55B2203AFAD200B0B59A /* Frameworks */,
+				84DA55B3203AFAD200B0B59A /* Resources */,
+				0F5C646A4F889AC417ECE63C /* [CP] Embed Pods Frameworks */,
+				6A04EC8E13CD2A7A5D77117F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84DA55B7203AFAD200B0B59A /* PBXTargetDependency */,
+			);
+			name = AvatarToolTests;
+			productName = AvatarToolTests;
+			productReference = 84DA55B5203AFAD200B0B59A /* AvatarToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84DA55BF203AFAD200B0B59A /* AvatarToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DA55CF203AFAD200B0B59A /* Build configuration list for PBXNativeTarget "AvatarToolUITests" */;
+			buildPhases = (
+				E94921D9829978AA085DC2ED /* [CP] Check Pods Manifest.lock */,
+				84DA55BC203AFAD200B0B59A /* Sources */,
+				84DA55BD203AFAD200B0B59A /* Frameworks */,
+				84DA55BE203AFAD200B0B59A /* Resources */,
+				EB90CD46F77D961C5C59C7F4 /* [CP] Embed Pods Frameworks */,
+				62CAC265B6B0607EE283EBA7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84DA55C2203AFAD200B0B59A /* PBXTargetDependency */,
+			);
+			name = AvatarToolUITests;
+			productName = AvatarToolUITests;
+			productReference = 84DA55C0203AFAD200B0B59A /* AvatarToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84DA5599203AFAD200B0B59A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Audrius Visniauskas";
+				TargetAttributes = {
+					84DA55A0203AFAD200B0B59A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					84DA55B4203AFAD200B0B59A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84DA55A0203AFAD200B0B59A;
+					};
+					84DA55BF203AFAD200B0B59A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84DA55A0203AFAD200B0B59A;
+					};
+				};
+			};
+			buildConfigurationList = 84DA559C203AFAD200B0B59A /* Build configuration list for PBXProject "AvatarTool" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ar,
+				da,
+				de,
+				es,
+				fr,
+				id,
+				it,
+				ja,
+				ko,
+				ms,
+				nl,
+				pl,
+				pt,
+				ru,
+				tr,
+				vi,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = 84DA5598203AFAD200B0B59A;
+			productRefGroup = 84DA55A2203AFAD200B0B59A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84DA55A0203AFAD200B0B59A /* AvatarTool */,
+				84DA55B4203AFAD200B0B59A /* AvatarToolTests */,
+				84DA55BF203AFAD200B0B59A /* AvatarToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84DA559F203AFAD200B0B59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DA55AF203AFAD200B0B59A /* LaunchScreen.storyboard in Resources */,
+				84DA55AC203AFAD200B0B59A /* Assets.xcassets in Resources */,
+				84DA55AA203AFAD200B0B59A /* Main.storyboard in Resources */,
+				842A5A3220411BC0004F4B96 /* TOCropViewControllerLocalizable.strings in Resources */,
+				842A5A0520411A2D004F4B96 /* Info.plist in Resources */,
+				8442E977203B1C6000E248F0 /* FAGridView.xib in Resources */,
+				842A5A3320411BC0004F4B96 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DA55B3203AFAD200B0B59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DA55BE203AFAD200B0B59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F5C646A4F889AC417ECE63C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AvatarToolTests/Pods-AvatarToolTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48834B1AEDB0970EBE23D4E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AvatarTool/Pods-AvatarTool-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AvatarTool/Pods-AvatarTool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62CAC265B6B0607EE283EBA7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AvatarToolUITests/Pods-AvatarToolUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A04EC8E13CD2A7A5D77117F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AvatarToolTests/Pods-AvatarToolTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79FF364C7E09B3116D73DB96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AvatarTool/Pods-AvatarTool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B022EA4DCE75F418054BF119 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AvatarTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0423C11F87741AD8B78E9BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AvatarToolTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E94921D9829978AA085DC2ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AvatarToolUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB90CD46F77D961C5C59C7F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AvatarToolUITests/Pods-AvatarToolUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84DA559D203AFAD200B0B59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8442E975203B19A200E248F0 /* FAScrollView.swift in Sources */,
+				84DA55D3203AFE2C00B0B59A /* PhotosViewController.swift in Sources */,
+				842A5A3920411BC0004F4B96 /* TOCropOverlayView.m in Sources */,
+				84DA55A7203AFAD200B0B59A /* ViewController.swift in Sources */,
+				842A5A3A20411BC0004F4B96 /* TOCropScrollView.m in Sources */,
+				842A5A3620411BC0004F4B96 /* TOCropViewControllerTransitioning.m in Sources */,
+				842A5A3520411BC0004F4B96 /* TOCroppedImageAttributes.m in Sources */,
+				84DA55A5203AFAD200B0B59A /* AppDelegate.swift in Sources */,
+				842A5A3420411BC0004F4B96 /* TOActivityCroppedImageProvider.m in Sources */,
+				842A5A3C20411BC0004F4B96 /* TOCropView.m in Sources */,
+				84DA55D9203B01B000B0B59A /* Constants.swift in Sources */,
+				8442E979203B55F100E248F0 /* UIImage+Additions.swift in Sources */,
+				842A5A0420411A2D004F4B96 /* CropViewController.swift in Sources */,
+				842A5A3720411BC0004F4B96 /* UIImage+CropRotate.m in Sources */,
+				842A5A3820411BC0004F4B96 /* TOCropViewController.m in Sources */,
+				842A5A3B20411BC0004F4B96 /* TOCropToolbar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DA55B1203AFAD200B0B59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DA55BA203AFAD200B0B59A /* AvatarToolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DA55BC203AFAD200B0B59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DA55C5203AFAD200B0B59A /* AvatarToolUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84DA55B7203AFAD200B0B59A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84DA55A0203AFAD200B0B59A /* AvatarTool */;
+			targetProxy = 84DA55B6203AFAD200B0B59A /* PBXContainerItemProxy */;
+		};
+		84DA55C2203AFAD200B0B59A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84DA55A0203AFAD200B0B59A /* AvatarTool */;
+			targetProxy = 84DA55C1203AFAD200B0B59A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		842A5A0720411BBF004F4B96 /* TOCropViewControllerLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				842A5A0820411BBF004F4B96 /* ar */,
+				842A5A0920411BBF004F4B96 /* Base */,
+				842A5A0A20411BBF004F4B96 /* da */,
+				842A5A0B20411BBF004F4B96 /* de */,
+				842A5A0C20411BBF004F4B96 /* en */,
+				842A5A0D20411BBF004F4B96 /* es */,
+				842A5A0E20411BBF004F4B96 /* fr */,
+				842A5A0F20411BBF004F4B96 /* id */,
+				842A5A1120411BBF004F4B96 /* it */,
+				842A5A1220411BBF004F4B96 /* ja */,
+				842A5A1320411BBF004F4B96 /* ko */,
+				842A5A1D20411BBF004F4B96 /* ms */,
+				842A5A1E20411BBF004F4B96 /* nl */,
+				842A5A1F20411BBF004F4B96 /* pl */,
+				842A5A2020411BBF004F4B96 /* pt */,
+				842A5A2120411BBF004F4B96 /* ru */,
+				842A5A2520411BBF004F4B96 /* tr */,
+				842A5A2620411BBF004F4B96 /* vi */,
+				842A5A3020411BBF004F4B96 /* zh-Hans */,
+				842A5A3120411BBF004F4B96 /* zh-Hant */,
+			);
+			name = TOCropViewControllerLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		84DA55A8203AFAD200B0B59A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84DA55A9203AFAD200B0B59A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84DA55AD203AFAD200B0B59A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84DA55AE203AFAD200B0B59A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84DA55C7203AFAD200B0B59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84DA55C8203AFAD200B0B59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84DA55CA203AFAD200B0B59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 820622961267D4EC75A8F12A /* Pods-AvatarTool.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Interneto Pazintys UAB (Z66NFULD25)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Z66NFULD25;
+				INFOPLIST_FILE = AvatarTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avatartool.AvatarTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3b18c18f-f051-4eab-9aa8-5897effb2c12";
+				PROVISIONING_PROFILE_SPECIFIER = avatar_adhoc;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/admin/Documents/WORK/WORK-AVATARTOOL/AvatarTool/AvatarTool/CropViewController/CropViewController-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84DA55CB203AFAD200B0B59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DDAA2EA251C077EC4452469 /* Pods-AvatarTool.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Interneto Pazintys UAB (Z66NFULD25)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Z66NFULD25;
+				INFOPLIST_FILE = AvatarTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avatartool.AvatarTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3b18c18f-f051-4eab-9aa8-5897effb2c12";
+				PROVISIONING_PROFILE_SPECIFIER = avatar_adhoc;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/admin/Documents/WORK/WORK-AVATARTOOL/AvatarTool/AvatarTool/CropViewController/CropViewController-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84DA55CD203AFAD200B0B59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2841BB2263E43F0C9702A1F0 /* Pods-AvatarToolTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AvatarToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avatartool.AvatarToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AvatarTool.app/AvatarTool";
+			};
+			name = Debug;
+		};
+		84DA55CE203AFAD200B0B59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91D9809F33DBAAE78B79DF33 /* Pods-AvatarToolTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AvatarToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avatartool.AvatarToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AvatarTool.app/AvatarTool";
+			};
+			name = Release;
+		};
+		84DA55D0203AFAD200B0B59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B11C2C93E739FF7752F1D21B /* Pods-AvatarToolUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AvatarToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avatartool.AvatarToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AvatarTool;
+			};
+			name = Debug;
+		};
+		84DA55D1203AFAD200B0B59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 062595E6B32FF7AB17E0164B /* Pods-AvatarToolUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AvatarToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avatartool.AvatarToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AvatarTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84DA559C203AFAD200B0B59A /* Build configuration list for PBXProject "AvatarTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DA55C7203AFAD200B0B59A /* Debug */,
+				84DA55C8203AFAD200B0B59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84DA55C9203AFAD200B0B59A /* Build configuration list for PBXNativeTarget "AvatarTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DA55CA203AFAD200B0B59A /* Debug */,
+				84DA55CB203AFAD200B0B59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84DA55CC203AFAD200B0B59A /* Build configuration list for PBXNativeTarget "AvatarToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DA55CD203AFAD200B0B59A /* Debug */,
+				84DA55CE203AFAD200B0B59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84DA55CF203AFAD200B0B59A /* Build configuration list for PBXNativeTarget "AvatarToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DA55D0203AFAD200B0B59A /* Debug */,
+				84DA55D1203AFAD200B0B59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84DA5599203AFAD200B0B59A /* Project object */;
+}

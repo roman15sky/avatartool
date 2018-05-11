@@ -1,0 +1,6 @@
+framework module Pods_AvatarTool {
+  umbrella header "Pods-AvatarTool-umbrella.h"
+
+  export *
+  module * { export * }
+}
